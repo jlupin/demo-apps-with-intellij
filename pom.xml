@@ -32,8 +32,8 @@
     <modules>
         <module>common-util</module>
         <module>common-pojo</module>
-        <module>BusinessLogicLayer/currency-converter-business-logic/interfaces</module>
-        <module>BusinessLogicLayer/currency-converter-business-logic/implementation</module>
+        <module>BusinessLogicLayer/currency-converter-base-business-logic/interfaces</module>
+        <module>BusinessLogicLayer/currency-converter-base-business-logic/implementation</module>
         <module>AccessLayer/portal-access/implementation</module>
         <module>integration-test</module>
         <module>DataLayer/exchange-rates-data/interfaces</module>

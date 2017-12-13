@@ -1,6 +1,8 @@
 package com.example.currency.converter.configuration;
 
-import com.example.currency.converter.service.interfaces.CurrencyConverterService;
+import com.example.currency.converter.service.interfaces.CurrencyConverterChfService;
+import com.example.currency.converter.service.interfaces.CurrencyConverterEurService;
+import com.example.currency.converter.service.interfaces.CurrencyConverterGbpService;
 import com.jlupin.impl.client.util.JLupinClientUtil;
 import com.jlupin.impl.logger.impl.log4j.JLupinLoggerOverLog4jImpl;
 import com.jlupin.interfaces.client.delegator.JLupinDelegator;
@@ -53,37 +55,37 @@ public class PortalSpringConfiguration {
 
     @Bean
     public JLupinLogger getJLupinLogger() {
-           return JLupinLoggerOverLog4jImpl.getInstance();
+        return JLupinLoggerOverLog4jImpl.getInstance();
     }
 
     @Bean
     public JLupinProxyObjectProducer getCurrencyConverterEURBusinessLogicMicroserviceProxyObjectProducer() {
-           return JLupinClientUtil.generateProxyObjectProducer("currency-converter-eur", getJLupinDelegator(), getJLupinLogger());
+        return JLupinClientUtil.generateProxyObjectProducer("currency-converter-eur", getJLupinDelegator(), getJLupinLogger());
     }
 
     @Bean
     public JLupinProxyObjectProducer getCurrencyConverterGBPBusinessLogicMicroserviceProxyObjectProducer() {
-           return JLupinClientUtil.generateProxyObjectProducer("currency-converter-gbp", getJLupinDelegator(), getJLupinLogger());
+        return JLupinClientUtil.generateProxyObjectProducer("currency-converter-gbp", getJLupinDelegator(), getJLupinLogger());
     }
 
     @Bean
     public JLupinProxyObjectProducer getCurrencyConverterCHFBusinessLogicMicroserviceProxyObjectProducer() {
-           return JLupinClientUtil.generateProxyObjectProducer("currency-converter-chf", getJLupinDelegator(), getJLupinLogger());
+        return JLupinClientUtil.generateProxyObjectProducer("currency-converter-chf", getJLupinDelegator(), getJLupinLogger());
     }
 
     @Bean(name = "currencyConverterEURService")
-    public CurrencyConverterService getCurrencyConverterEURService() {
-        return getCurrencyConverterEURBusinessLogicMicroserviceProxyObjectProducer().produceObject(CurrencyConverterService.class);
+    public CurrencyConverterEurService getCurrencyConverterEURService() {
+        return getCurrencyConverterEURBusinessLogicMicroserviceProxyObjectProducer().produceObject(CurrencyConverterEurService.class);
     }
 
     @Bean(name = "currencyConverterGBPService")
-    public CurrencyConverterService getCurrencyConverterGBPService() {
-        return getCurrencyConverterGBPBusinessLogicMicroserviceProxyObjectProducer().produceObject(CurrencyConverterService.class);
+    public CurrencyConverterGbpService getCurrencyConverterGBPService() {
+        return getCurrencyConverterGBPBusinessLogicMicroserviceProxyObjectProducer().produceObject(CurrencyConverterGbpService.class);
     }
 
     @Bean(name = "currencyConverterCHFService")
-    public CurrencyConverterService getCurrencyConverterCHFService() {
-        return getCurrencyConverterCHFBusinessLogicMicroserviceProxyObjectProducer().produceObject(CurrencyConverterService.class);
+    public CurrencyConverterChfService getCurrencyConverterCHFService() {
+        return getCurrencyConverterCHFBusinessLogicMicroserviceProxyObjectProducer().produceObject(CurrencyConverterChfService.class);
     }
 }
 

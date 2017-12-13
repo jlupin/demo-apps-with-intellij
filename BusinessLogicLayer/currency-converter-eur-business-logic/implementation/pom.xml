@@ -32,6 +32,12 @@
 
         <dependency>
             <groupId>com.example.currency.converter</groupId>
+            <artifactId>currency-converter-base-business-logic-implementation</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.example.currency.converter</groupId>
             <artifactId>common-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -42,11 +48,6 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.example.currency.converter</groupId>
-            <artifactId>currency-converter-business-logic-implementation</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
         <!-- JLupin dependencies -->
         <dependency>
@@ -66,6 +67,30 @@
             <plugin>
                 <groupId>com.jlupin</groupId>
                 <artifactId>jlupin-next-server-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate-swagger</goal>
+                        </goals>
+                        <configuration>
+                            <skipSwaggerGeneration>false</skipSwaggerGeneration>
+                            <apiSources>
+                                <apiSource>
+                                    <springmvc>false</springmvc>
+                                    <locations>com.example.currency.converter.service</locations>
+                                    <basePath>/currency-converter-eur</basePath>
+                                    <schemes>http</schemes>
+                                    <host>localhost:8082</host>
+                                    <info>
+                                        <title>Currency Converter EUR API</title>
+                                        <version>v1</version>
+                                    </info>
+                                    <swaggerDirectory>target/currency-converter-eur</swaggerDirectory>
+                                </apiSource>
+                            </apiSources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

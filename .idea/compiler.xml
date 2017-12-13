@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-pojo" />
+        <module name="common-util" />
+        <module name="currency-converter-base-business-logic-implementation" />
+        <module name="currency-converter-base-business-logic-interfaces" />
+        <module name="currency-converter-business-logic-implementation" />
+        <module name="currency-converter-business-logic-interfaces" />
+        <module name="currency-converter-business-logic-microservice" />
+        <module name="currency-converter-chf-business-logic-implementation" />
+        <module name="currency-converter-chf-business-logic-interfaces" />
+        <module name="currency-converter-eur-business-logic-implementation" />
+        <module name="currency-converter-eur-business-logic-interfaces" />
+        <module name="currency-converter-gbp-business-logic-implementation" />
+        <module name="currency-converter-gbp-business-logic-interfaces" />
+        <module name="exchange-rates-data-implementation" />
+        <module name="exchange-rates-data-interfaces" />
+        <module name="integration-test" />
+        <module name="portal-access" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-pojo" target="1.8" />
+      <module name="common-util" target="1.8" />
+      <module name="currency-converter" target="1.8" />
+      <module name="currency-converter-base-business-logic-implementation" target="1.8" />
+      <module name="currency-converter-base-business-logic-interfaces" target="1.8" />
+      <module name="currency-converter-business-logic-implementation" target="1.8" />
+      <module name="currency-converter-business-logic-interfaces" target="1.8" />
+      <module name="currency-converter-business-logic-microservice" target="1.8" />
+      <module name="currency-converter-chf-business-logic-implementation" target="1.8" />
+      <module name="currency-converter-chf-business-logic-interfaces" target="1.8" />
+      <module name="currency-converter-eur-business-logic-implementation" target="1.8" />
+      <module name="currency-converter-eur-business-logic-interfaces" target="1.8" />
+      <module name="currency-converter-gbp-business-logic-implementation" target="1.8" />
+      <module name="currency-converter-gbp-business-logic-interfaces" target="1.8" />
+      <module name="currency-converter-root" target="1.8" />
+      <module name="exchange-rates-data-implementation" target="1.8" />
+      <module name="exchange-rates-data-interfaces" target="1.8" />
+      <module name="integration-test" target="1.8" />
+      <module name="portal-access" target="1.8" />
+      <module name="test-2-to-remove" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

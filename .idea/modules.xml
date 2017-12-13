@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common-pojo/common-pojo.iml" filepath="$PROJECT_DIR$/common-pojo/common-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-util/common-util.iml" filepath="$PROJECT_DIR$/common-util/common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-base-business-logic/implementation/currency-converter-base-business-logic-implementation.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-base-business-logic/implementation/currency-converter-base-business-logic-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-base-business-logic/interfaces/currency-converter-base-business-logic-interfaces.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-base-business-logic/interfaces/currency-converter-base-business-logic-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-chf-business-logic/implementation/currency-converter-chf-business-logic-implementation.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-chf-business-logic/implementation/currency-converter-chf-business-logic-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-chf-business-logic/interfaces/currency-converter-chf-business-logic-interfaces.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-chf-business-logic/interfaces/currency-converter-chf-business-logic-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-eur-business-logic/implementation/currency-converter-eur-business-logic-implementation.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-eur-business-logic/implementation/currency-converter-eur-business-logic-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-eur-business-logic/interfaces/currency-converter-eur-business-logic-interfaces.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-eur-business-logic/interfaces/currency-converter-eur-business-logic-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-gbp-business-logic/implementation/currency-converter-gbp-business-logic-implementation.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-gbp-business-logic/implementation/currency-converter-gbp-business-logic-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/currency-converter-gbp-business-logic/interfaces/currency-converter-gbp-business-logic-interfaces.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/currency-converter-gbp-business-logic/interfaces/currency-converter-gbp-business-logic-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/currency-converter-root.iml" filepath="$PROJECT_DIR$/currency-converter-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataLayer/exchange-rates-data/implementation/exchange-rates-data-implementation.iml" filepath="$PROJECT_DIR$/DataLayer/exchange-rates-data/implementation/exchange-rates-data-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataLayer/exchange-rates-data/interfaces/exchange-rates-data-interfaces.iml" filepath="$PROJECT_DIR$/DataLayer/exchange-rates-data/interfaces/exchange-rates-data-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration-test/integration-test.iml" filepath="$PROJECT_DIR$/integration-test/integration-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AccessLayer/portal-access/implementation/portal-access.iml" filepath="$PROJECT_DIR$/AccessLayer/portal-access/implementation/portal-access.iml" />
+    </modules>
+  </component>
+</project>

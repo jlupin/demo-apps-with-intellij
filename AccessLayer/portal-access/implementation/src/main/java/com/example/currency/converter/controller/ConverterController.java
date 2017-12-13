@@ -3,7 +3,9 @@ package com.example.currency.converter.controller;
 import com.example.currency.converter.common.pojo.Currency;
 import com.example.currency.converter.controller.in.ConvertIn;
 import com.example.currency.converter.controller.out.ConvertOut;
-import com.example.currency.converter.service.interfaces.CurrencyConverterService;
+import com.example.currency.converter.service.interfaces.CurrencyConverterChfService;
+import com.example.currency.converter.service.interfaces.CurrencyConverterEurService;
+import com.example.currency.converter.service.interfaces.CurrencyConverterGbpService;
 import com.jlupin.impl.util.JLupinUtil;
 import com.jlupin.interfaces.logger.JLupinLogger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,13 +26,13 @@ import java.util.List;
 public class ConverterController {
     @Autowired
     @Qualifier("currencyConverterEURService")
-    private CurrencyConverterService currencyConverterEURService;
+    private CurrencyConverterEurService currencyConverterEURService;
     @Autowired
     @Qualifier("currencyConverterGBPService")
-    private CurrencyConverterService currencyConverterGBPService;
+    private CurrencyConverterGbpService currencyConverterGBPService;
     @Autowired
     @Qualifier("currencyConverterCHFService")
-    private CurrencyConverterService currencyConverterCHFService;
+    private CurrencyConverterChfService currencyConverterCHFService;
     @Autowired
     private JLupinLogger jLupinLogger;
 
