@@ -22,7 +22,7 @@
 
         <dependency>
             <groupId>com.example.currency.converter</groupId>
-            <artifactId>currency-converter-business-logic-interfaces</artifactId>
+            <artifactId>currency-converter-base-business-logic-interfaces</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
